@@ -1,0 +1,797 @@
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+h1 {
+    font-weight: 500;
+    color: red;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: red;
+}
+
+.section_1 {
+    padding: 30px;
+    padding-top: 0;
+}
+
+.foot {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1vw;
+    font-size: 0.8rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    box-sizing: border-box;
+    z-index: 10000;
+}
+
+.flex_grow {
+    flex-grow: 1;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2vw;
+    text-align-last: right;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration-line: none;
+    color: rgb(255, 0, 0);
+    font-family: Bebas Neue;
+
+}
+.header a:hover {
+    filter: blur(1px);
+    color: aliceblue;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 6vw;
+    transform: translateY(-10px);
+}
+
+.first {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    top: -5vh;
+    background-image: url(source/DSC00301.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.section_1 {
+    position: relative;
+    top: -15vh;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.photography {
+    text-align: center;
+    font-size: 7rem;
+    margin: 0;
+}
+.type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    align-self: center;
+}
+
+#type2{
+    display: grid;
+    font-size: 8rem;
+    margin: 0;
+}
+#type1 {
+    font-size: 2rem;
+    text-align: right;
+    margin: 0;
+}
+#type3 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+}
+
+.oru {
+    position: absolute;
+    width: 12vw;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.section_2 {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.linhnhi_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    overflow: visible; /* Allow overflow on both sides */
+    width: auto; /* Allow the grid to take necessary width */
+}
+
+.linhnhi1, .linhnhi2, .linhnhi3, .linhnhifront, .linhnhi5 {
+    width: 20vw;
+    display: grid;
+    position: relative; /* Enable positioning within the grid box */
+}
+
+.linhnhifront {
+    width: 25vw;
+    z-index: 100;
+    filter: none; /* Default filter */
+    transition: filter 0.3s ease; /* Smooth transition for filter */
+    cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+.linhnhifront:hover {
+    filter: invert(100%); 
+}
+
+.textlnhi {
+    position: relative;
+    display: inline-block;
+    width: 100%; 
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    bottom: 0; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+    font-size: 2vw; /* Adjust font size as needed */
+    font-weight: bold;
+    z-index: 101; /* Ensure it stays on top of the image */
+}
+
+
+/* Positioning individual images */
+.linhnhi5 {
+    top: 0vh;
+}
+
+.linhnhi3 {
+    filter: grayscale(1);
+}
+
+.linhnhi1 {
+    width: 22vw;
+    filter: grayscale(1);
+}
+.linhnhi2 {
+    top: 3vh;
+    filter: grayscale(1);
+}
+
+/*ATOMIC WINTER*/
+
+.section_3 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.atomic_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    overflow: visible;
+    width: auto;
+}
+
+.atomic1, .atomic2, .atomic3, .atomicfront, .atomic4 {
+    width: 20vw;
+    display: grid;
+    position: relative;
+}
+
+.atomicfront {
+    width: 25vw;
+    z-index: 100;
+    filter: none;
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.atomicfront:hover {
+    filter: invert(100%); 
+}
+
+.textatomic {
+    position: relative;
+    display: inline-block;
+    width: 100%; 
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    font-weight: bold;
+    z-index: 101;
+}
+
+.atomic4 {
+    top: 2vh;
+    width: 18vw;
+}
+
+.atomic3 {
+    top: 2vh;
+    width: 22vw;
+}
+
+.atomic1 {
+    top: 0;
+    width: 22vw;
+    left: 2vw;
+}
+
+.atomic2 {
+    top: 7vh;
+    width: 18vw;
+}
+
+.section_4 {
+    position: relative;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.garden_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    overflow: visible;
+    width: auto;
+}
+
+.garden1, .garden2, .garden3, .gardenfront, .garden4 {
+    width: 20vw;
+    display: grid;
+    position: relative;
+}
+
+.gardenfront {
+    width: 25vw;
+    z-index: 100;
+    filter: none;
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.gardenfront:hover {
+    filter: invert(100%); 
+}
+
+.textgarden {
+    position: relative;
+    display: inline-block;
+    width: 100%; 
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    font-weight: bold;
+    z-index: 101;
+}
+
+.garden4 {
+    top: 2vh;
+    width: 18vw;
+}
+
+.garden3 {
+    top: 5vh;
+    width: 22vw;
+}
+
+.garden1 {
+    top: 0;
+    width: 22vw;
+    left: 2vw;
+}
+
+.garden2 {
+    top: 5vh;
+    width: 18vw;
+}
+
+
+
+
+/*video*/
+
+
+.section_big_video {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+#videography {
+    position: relative;
+    top: 20vh;
+    left: 0%;
+    display: block;
+    height: 10vh;
+    z-index: 100;
+}
+
+.section_video {
+    background-color: white;
+    position: relative;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    overflow: visible;
+    width: auto;
+    gap: 2.5vw;
+    row-gap: 30vh;
+}
+
+.video1, .video2 {
+    width: 40vw;
+}
+
+.watch {
+    font-size: 1rem;
+    font-family: "Chakra Petch", sans-serif;
+    color: black;
+    margin: 0.8vh;
+    align-items: center;
+}
+
+.watch:hover {
+    text-decoration: underline;
+}
+
+.video_with_text {
+    align-items: center;
+}
+
+.video_with_text p {
+    margin: 0;
+}
+
+.title_video {
+    font-size: 2vw;
+    font-weight: bold;
+    z-index: 101;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+
+.slider_section {
+    position: relative;
+    padding-top: 5vh;
+    padding: 30px;
+    width: 100%; /* Ensure it takes full width */
+    height: 170vh; /* Ensure it takes full height */
+    overflow: hidden;
+    background-color: white;
+    /*background-image: url(source/gradientbg.png);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    max-width: 100vw; /* Prevents the section from exceeding the viewport width */
+}
+
+
+#slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(-25deg) rotateZ(-120deg);
+    transform-style: preserve-3d;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    user-select: none;
+}
+
+/* Style for each card */
+/* Style for each card */
+.card {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transform: rotateX(20deg) rotateY(-10deg) rotateZ(130deg);
+    border: 2.5px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    margin: -300px 0;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0.85;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text overlay */
+.card .overlay-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, text-shadow 0.3s ease;
+}
+
+.card:hover .overlay-text {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(37, 37, 37, 0.8);
+}
+
+h1 {
+    display: block;
+    font-size: 3rem;
+    margin: 0;
+    padding-left: 10vw;
+  }
+
+.illustration {
+    position: relative;
+    top: 15vh;
+    left: -30px;
+    display: block;
+    height: 10vh;
+    z-index: 100;
+}
+
+.view_more {
+    position: relative;
+    top: 12vh;
+    z-index: 100;
+    padding-left: 10vw;
+    color: red;
+}
+
+.view {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 931px) {
+    
+    .section_2, .section_1, .section_3 {
+        overflow-x: hidden;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 930px) {
+    
+    .section_2, .section_1, .section_3 {
+        height: 70vh;
+        overflow-x: hidden;
+    }
+    .illustration {
+        position: relative;
+        top: 0vh;
+        left: 0;
+        display: block;
+        height: 10vh;
+        z-index: 100;
+    }
+    .view_more {
+        position: relative;
+        top: 0vh;
+        padding-left: 0;
+        color: red;
+        text-align: center;
+        width: 100%;
+    }
+    .view {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    
+
+    .slider {
+        display: none;
+    }
+    .card {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        transform: rotateX(20deg) rotateY(-10deg) rotateZ(130deg);
+        border: 2.5px solid rgba(255, 255, 255, 0.15);
+        overflow: hidden;
+        margin: -300px 0;
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        opacity: 0.85;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    .section_2, .section_1, .section_3 {
+        height: 70vh;
+        overflow-x: hidden;
+    }
+
+    .title_video {
+        font-size: 0.9rem;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+
+    .slider {
+        display: none;
+    }
+    .card {
+        position: relative;
+        width: 340px;
+        height: 340px;
+        transform: rotateX(20deg) rotateY(-10deg) rotateZ(130deg);
+        border: 2.5px solid rgba(255, 255, 255, 0.15);
+        overflow: hidden;
+        margin: -300px 0;
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        opacity: 0.85;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    .section_2, .section_1, .section_3 {
+        height: 70vh;
+        overflow-x: hidden;
+    }
+    
+    
+}
+
+/* Styles for screens 721px and up 
+@media only screen and (max-width: 720px) {
+    .card {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        transform: rotateX(20deg) rotateY(-10deg) rotateZ(130deg);
+        border: 2.5px solid rgba(255, 255, 255, 0.15);
+        overflow: hidden;
+        margin: -300px 0;
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        opacity: 0.85;
+        display: flex; /* Show the card 
+        align-items: center;
+        justify-content: center;
+    }
+    .section_2, .section_1, .section_3 {
+        height: 70vh;
+        overflow-x: hidden;
+    }
+}*/
+
+
+
+/* Styles for screens up to 480px */
+@media only screen and (max-width: 480px) {
+
+    .nav a {
+        font-size: 1.5rem;
+    }
+    .logo {
+        width: 12vw;
+    }
+    .arrow {
+        width: 4.2vw;
+    }
+    .title {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-left: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .section_2, .section_1, .section_3 {
+        height: 70vh;
+        overflow-x: hidden;
+    }
+    .linhnhi1, .linhnhi2, .linhnhi3, .linhnhi5, .linhnhifront,
+    .atomic1, .atomic2, .atomic3, .atomic4, .atomicfront,
+    .garden1, .garden2, .garden3, .garden4, .gardenfront {
+        width: 35vw;
+    }
+    .textgarden .title {
+        bottom: -5vh;
+    }
+    .video {
+        grid-template-columns: 1fr;
+        row-gap: 10vh;
+        margin-top: 10vh;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .video1, .video2 {
+        width: 60vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .title_video {
+        font-size: 1rem;
+    }
+    .watch a {
+        font-size: 0.5rem;
+    }
+    .section_video {
+        max-width: 300vh;
+    }
+    #videography {
+        top: 5vh;
+        margin-bottom: 5vh;
+    }
+    .video_with_text {
+        justify-content: center;
+        align-items: center;
+    }
+    .slider_section {
+        position: relative;
+        padding-top: 5vh;
+        padding: 30px;
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        background-color: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        max-width: 100vw;
+    }
+    #slider {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateX(0deg) rotateY(-25deg) rotateZ(-120deg);
+        transform-style: preserve-3d;
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        user-select: none;
+    }
+    .card {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform: rotateX(20deg) rotateY(-10deg) rotateZ(130deg);
+        border: 2.5px solid rgba(255, 255, 255, 0.15);
+        overflow: hidden;
+        margin: -300px 0;
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        opacity: 0.85;
+        display: none; /* Hide the card */
+        align-items: center;
+        justify-content: center;
+    }
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .card .overlay-text {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease, text-shadow 0.3s ease;
+    }
+    .card:hover .overlay-text {
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(37, 37, 37, 0.8);
+    }
+    .illustration {
+        position: relative;
+        top: 0vh;
+        left: 0;
+        display: block;
+        height: 10vh;
+        z-index: 100;
+    }
+    .view_more {
+        position: relative;
+        top: 0vh;
+        padding-left: 0;
+        color: red;
+        text-align: center;
+        width: 100%;
+    }
+    .view {
+        display: flex;
+        flex-direction: column;
+    }
+    .slider {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .title_video {
+        font-size: 0.8rem;
+    } 
+}

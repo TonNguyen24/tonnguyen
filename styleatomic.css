@@ -1,0 +1,266 @@
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+h1 {
+    font-weight: 500;
+    color: red;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: red;
+}
+
+.section_1 {
+    padding: 30px;
+    padding-top: 0;
+}
+
+.foot {
+    color: white;
+    text-align: center;
+    padding: 1.5vw;
+    font-size: 0.8rem;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration-line: none;
+    color: rgb(255, 0, 0);
+    font-family: Bebas Neue;
+
+}
+a:hover {
+    filter: blur(1px);
+    color: aliceblue;
+}
+
+.cover {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    top: -20vh;
+    background-image: url(source/DSC00301.2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align children to the bottom */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text horizontally */
+    margin: 0; /* Ensure no default margin is affecting the layout */
+    padding: 10px; /* Ensure no default padding is affecting the layout */
+}
+
+
+.title, .cover p {
+    color: rgb(255, 255, 255);  /* Optional: set text color */
+    bottom: -90vh;
+    font-size: 1rem;
+}
+
+.cover p {
+    font-size: 1.1rem;
+    padding: 1vw;
+    margin-bottom: 10vh;
+}
+
+
+.title {
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.flex_grow {
+    flex-grow: 1;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2vw;
+    text-align-last: right;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration-line: none;
+    color: rgb(255, 0, 0);
+    font-family: Bebas Neue;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 6vw;
+    transform: translateY(-10px);
+}
+
+/*.section_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.image_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    row-gap: 2vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.image_gallery img {
+    width: 25vw;
+} */
+
+.section_gallery {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.image_gallery {
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    align-items: center;
+    max-width: 80vw;
+}
+
+.image_gallery img {
+    width: 60vw; 
+    margin-bottom: 3vh; 
+}
+
+
+  
+  .section_credits {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.credits_title {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.credits_text {
+    display: flex;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 3vh;
+    right: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+@media only screen and (min-width: 931px) {}
+
+@media only screen and (min-width: 769px) and (max-width: 930px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 480px) {
+    .nav a {
+        font-size: 1.5rem;
+    }
+    .logo {
+        width: 12vw;
+    }
+    .arrow {
+        width: 4.2vw;
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .cover p {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-bottom: 0;
+    }
+    .cover {
+        padding: 0;
+    }
+    .container {
+        display: none;
+    }
+    .credits_text {
+
+        font-size: 1rem;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+    .image_gallery img {
+        width: 60vw;
+        margin-bottom: 3vh;
+    }
+    .scrollTop {
+       display: none;
+      }
+    .section_credits {
+        position: relative;
+        margin-top: 20vh;
+    }
+    .foot {
+        margin-top: 10vh;
+    }
+}

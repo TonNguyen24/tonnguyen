@@ -1,0 +1,527 @@
+/* General Styles */
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+h1 {
+    font-weight: 500;
+    color: red;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: red;
+}
+
+.section_1 {
+    padding: 30px;
+    padding-top: 0;
+    overflow-x: hidden;
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+.foot {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 1.5vw;
+    font-size: 0.8rem;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.flex_grow {
+    flex-grow: 1;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2vw;
+    text-align-last: right;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration-line: none;
+    color: rgb(255, 0, 0);
+    font-family: Bebas Neue;
+}
+
+.header a:hover {
+    filter: blur(1px);
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 6vw;
+    transform: translateY(-10px);
+    z-index: 1000;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 3vh;
+    right: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 40;
+}
+
+p {
+    color: white;
+    text-align: justify;
+}
+
+.link {
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.link a {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+}
+
+.whole {
+    display: flex;
+    gap: 2vw;
+}
+
+.self_cont {
+    position: relative;
+    width: 40vw;
+}
+
+.self {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.pieces {
+    position: absolute;
+    width: 50vw;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensures the pieces are on top of the self image */
+}
+
+.pieces img {
+    position: absolute; /* Allows each piece to be draggable independently */
+    width: 40%; /* Set the default width for all images */
+    cursor: pointer;
+}
+
+/* Targeting img3 and img4 individually */
+.pieces .img1,
+.pieces .img4 {
+    width: 20%; /* Resize img3 and img4 to 25% width */
+}
+
+.pieces .img1 {
+    top: 65vh;
+    left: 25vw;
+    z-index: 10;
+}
+
+.pieces .img2 {
+    top: 15vh;
+    left: 25vw;
+    width: 35%;
+}
+
+.pieces .img3 {
+    top: 15vh;
+    width: 35%;
+}
+
+.pieces .img4 {
+    top: 55vh;
+    left: 5vw;
+    z-index: 10;
+}
+
+.section_1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+}
+
+.content {
+    display: flex;
+}
+
+.profile-info {
+    display: grid;
+    flex-direction: column;
+}
+
+li {
+    color: white;
+    list-style: none;
+    font-weight: 200;
+}
+
+ul {
+    padding: 0;
+    margin-top: 0;
+}
+
+.profile-info p {
+    font-weight: 200;
+}
+
+.profile-info .head {
+    font-size: 2rem;
+}
+
+.each {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.foot {
+    display: block;
+}
+
+.head {
+    margin: 0;
+    padding: 0;
+}
+
+.head p {
+    margin: 0;
+    padding: 0;
+}
+
+.text_self {
+    position: relative;
+    width: 40vw;
+}
+
+.flex_grow {
+    width: 40vw;
+}
+
+.whole {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.title {
+    margin-bottom: 3vh;
+}
+
+.contact {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.text_self {
+    font-weight: 200;
+}
+
+.rmit {
+    margin-top: 0;
+}
+
+
+@media only screen and (min-width: 931px) {}
+
+@media only screen and (min-width: 769px) and (max-width: 930px) {
+    .pieces {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .logo {
+        width: 12vw;
+    }
+
+    .arrow {
+        width: 4.2vw;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .foot {
+        margin-top: 2vh;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .pieces {
+        display: none;
+    }
+
+    .whole {
+        grid-template-columns: 1fr;
+    }
+
+    .text_self {
+        font-size: 0.9rem;
+        width: 100%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+    }
+
+    .header {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .self_cont {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .who {
+        font-size: 1rem;
+    }
+
+    .head {
+        font-size: 1rem;
+    }
+
+    .section_1 {
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .profile-info {
+        gap: 0.5rem;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .each {
+        grid-template-columns: 1fr;
+    }
+    .scrollTop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .logo {
+        width: 12vw;
+    }
+
+    .arrow {
+        width: 4.2vw;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .foot {
+        margin-top: 2vh;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .pieces {
+        display: none;
+    }
+
+    .whole {
+        grid-template-columns: 1fr;
+    }
+
+    .text_self {
+        font-size: 0.9rem;
+        width: 100%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+    }
+
+    .header {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .self_cont {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .who {
+        font-size: 1rem;
+    }
+
+    .head {
+        font-size: 1rem;
+    }
+
+    .section_1 {
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .profile-info {
+        gap: 0.5rem;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .each {
+        grid-template-columns: 1fr;
+    }
+    .scrollTop {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .nav a {
+        font-size: 1.5rem;
+    }
+    .logo {
+        width: 12vw;
+    }
+
+    .arrow {
+        width: 4.2vw;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .foot {
+        margin-top: 2vh;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .pieces {
+        display: none;
+    }
+
+    .whole {
+        grid-template-columns: 1fr;
+    }
+
+    .text_self {
+        font-size: 0.9rem;
+        width: 100%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+    }
+
+    .header {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .self_cont {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .who {
+        font-size: 1rem;
+    }
+
+    .head {
+        font-size: 1rem;
+    }
+
+    .section_1 {
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .profile-info {
+        gap: 0.5rem;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .each {
+        grid-template-columns: 1fr;
+    }
+    .scrollTop {
+        display: none;
+    }
+}
